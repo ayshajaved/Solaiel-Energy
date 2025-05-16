@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaiel Energy - Solar Solutions</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sun.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=geist-sans@1,2,3,4,5,6,7,8,9&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loading" id="preloader">
+        <div class="loader">Solaiel</div>
+    </div>
+    
+    <!-- Add navigation buttons -->
+    <nav class="side-nav">
+        <a href="#home" class="nav-btn">Welcome</a>
+        <a href="#about" class="nav-btn">About Us</a>
+        <a href="#solarplanner" class="nav-btn">Planner</a>
+        <a href="#services" class="nav-btn">Assistant</a>
+        <a href="#contact" class="nav-btn">Installer</a>
+    </nav>
+
+    <!-- Original SVG Section -->
+    <section class="page-section" id="home">
+        <!-- From Uiverse.io by reyrojo2 --> 
+        <svg viewBox="0 0 1280 720">
+            <!-- Logo group -->
+            <g class="logo-group">
+                <image href="logo.png" x="-80" y="10" width="60" height="60" onerror="this.style.display='none'" />
+                <text x="-20" y="45" class="solaiel-text">Solaiel</text>
+            </g>
+
+            <mask id="maskLeft">
+                <rect x="0" width="640" height="100%" fill="#fff"/>
+            </mask>
+            <mask id="maskRight">
+                <rect x="640" width="640" height="100%" fill="#fff"/>
+            </mask>
+            <g font-size="100">
+                <g mask="url(#maskLeft)" fill="#fff" class="left">
+                    <text y="120">Let's Browse</text>
+                    <text y="250">Bright House</text>
+                    <text y="380">Local Ties</text>
+                    <text y="510">Solar Rise</text>
+                </g>
+                <g mask="url(#maskRight)" fill="#aaa" class="right">
+                    <text y="120">Let's Browse</text>
+                    <text y="250">Bright House</text>
+                    <text y="380">Local Ties</text>
+                    <text y="510">Solar Rise</text>
+                </g>
+            </g>
+        </svg>
+        <div class="tagline">Illuminate Your Life with <span class="solaiel-highlight" style="font-weight: bolder; -webkit-text-stroke: 0.5px white;">Solaiel</span>: Pakistan's Solar Revolution</div>
+        <!-- Add sun animation here -->
+        <div class="sun-container home-sun">
+            <div class="section-banner-sun">
+                <div id="star-1" class="curved-corner-star">
+                    <div id="curved-corner-topleft"></div>
+                    <div id="curved-corner-topright"></div>
+                </div>
+                <div id="star-2" class="curved-corner-star">
+                    <div id="curved-corner-bottomleft"></div>
+                    <div id="curved-corner-bottomright"></div>
+                </div>
+                <div id="star-3" class="curved-corner-star">
+                    <div id="curved-corner-topleft"></div>
+                    <div id="curved-corner-topright"></div>
+                </div>
+                <div id="star-4" class="curved-corner-star">
+                    <div id="curved-corner-bottomleft"></div>
+                    <div id="curved-corner-bottomright"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="page-section" id="about">
+        <h2 class="section-title">About Us</h2>
+        <h3 class="steps-title">Plan your solar future in three steps</h3>
+        <div class="steps-container">
+            <div class="card">
+                <div class="title-1">AI Solar Plan</div>
+                <div class="content">
+                    Let our AI analyze your energy needs and design the perfect solar system for your home or business, optimized for efficiency and cost.
+                </div>
+                <button class="btn" onclick="window.location.href='#solarplanner'">Learn more</button>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="title-1">Chat with Solaiel</div>
+                <div class="content">
+                    Have questions about solar energy? Our AI assistant is available 24/7 to provide expert guidance on all your solar energy inquiries.
+                </div>
+                <button class="btn" onclick="window.location.href='#services'">Learn more</button>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="title-1">Find Installers</div>
+                <div class="content">
+                    Locate certified solar engineers and installers near you. We connect you with trusted professionals to bring your solar project to life.
+                </div>
+                <button class="btn">Learn more</button>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar Planner Section -->
+    <section class="page-section" id="solarplanner">
+        <div class="progress-steps">
+            <div class="progress-step">
+                <div class="progress-circle">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-7-7v18"></path>
+                    </svg>
+                    <div class="progress-number">1</div>
+                </div>
+                <h3>Specify Your Roof Size</h3>
+                <p>Tell us your roof size to determine the solar potential for your home.</p>
+            </div>
+            <div class="progress-step">
+                <div class="progress-circle">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <div class="progress-number">2</div>
+                </div>
+                <h3>Share Energy Usage & Location</h3>
+                <p>Input your monthly energy usage and location for a personalized analysis.</p>
+            </div>
+            <div class="progress-step">
+                <div class="progress-circle">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div class="progress-number">3</div>
+                </div>
+                <h3>Receive Your Solar Plan</h3>
+                <p>Get a custom solar plan with system size, costs, and estimated savings.</p>
+            </div>
+        </div>
+    
+        <div class="planner-cards">
+            <!-- Add your cards here -->
+        </div>
+    </section>
+
+    <div class="planner-bottom">
+        <h2 class="steps-title shine" style="font-size: 3rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 900; color: white; text-align: center; margin-top: 2rem; font-family: 'Geist Sans', sans-serif;">
+            AI Solar Planner
+        </h2>
+        <p class="section-subtitle" style="font-size: 1.5rem; color: #aaa; text-align: center; margin-top: 1rem; font-family: 'Josefin Sans', sans-serif; max-width: 1200px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            Our AI Solar Planner uses advanced machine learning to design a personalized solar system for your home. Enter your roof size, energy usage, and location, and get a tailored plan with estimated savings, system size, and more—all in minutes!
+        </p>
+        <div class="button-container">
+            <button id="googleSignInButton" class="animated-button type--C">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">GET STARTED WITH GOOGLE</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+            </button>
+            <!-- Add greeting and logout elements -->
+            <div id="greeting" style="color: white; font-size: 1.5rem; margin-top: 1rem; text-align: center;"></div>
+            <button id="logout" class="animated-button type--C" style="display: none; margin-top: 1rem;">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">LOGOUT</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="page-section" id="services">
+        <div style="display: flex; height: 100vh; width: 100%; position: relative;">
+            <div style="width: 60%; height: 100vh; position: relative; overflow: hidden;">
+                <iframe 
+                    src='https://my.spline.design/robotfollowcursorforlandingpage-b4bdd1380ecef510f3d8ccfcbf812371/' 
+                    frameborder='0' 
+                    style="width: 140%; height: 140%; position: absolute; top: -20%; left: -20%; transform: scale(1); border: none;"
+                ></iframe>
+            </div>
+            <div style="width: 40%; height: 100vh; background: rgba(0, 0, 0, 0.8); border-left: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+                <div class="solaiel-highlight" style="padding: 25px; color: white; font-size: 2.5em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.2); background: linear-gradient(45deg, rgba(201, 123, 20, 0.2), rgba(0, 0, 0, 0.4)); -webkit-text-stroke: 0.5px white;">
+                    SOLAIEL AI ASSISTANT </br>
+                    How Can I Help You?
+                </div>
+                <!-- Replace the chatbot container section with this updated version -->
+                <div class="chatbot-container" style="display: flex; flex-direction: column; flex: 1; overflow: hidden; height: 100%;">
+                    <div id="chat-messages" class="chat-messages" style="flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
+                        <div class="message bot-message">Assalam o Alaikum! My name is Solaiel. I'm here to help with your solar energy questions. How can I assist you today?</div>
+                    </div>
+                    <div class="suggested-questions" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; padding: 0 20px;"></div>
+                    <div class="chatbot-input" style="padding: 15px; border-top: 1px solid rgba(255,255,255,0.1); background: rgba(0, 0, 0, 0.3); display: flex; gap: 10px;">
+                        <input type="text" id="chat-input" placeholder="Ask about solar solutions..." class="chat-textbox" style="flex: 1;">
+                        <button onclick="sendMessage(document.getElementById('chat-input').value)" class="chat-send-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    async function sendMessage(message) {
+        if (!message.trim()) return;
+        
+        const chatMessages = document.getElementById('chat-messages');
+        const userMessage = document.createElement('div');
+        userMessage.className = 'message user-message';
+        userMessage.textContent = message;
+        chatMessages.appendChild(userMessage);
+        
+        // Clear input and show loading
+        document.getElementById('chat-input').value = '';
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'message bot-message loading';
+        loadingDiv.textContent = 'Typing...';
+        chatMessages.appendChild(loadingDiv);
+        
+        try {
+            const response = await fetch('https://backend-production-30b6.up.railway.app/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            loadingDiv.remove();
+            
+            const botMessage = document.createElement('div');
+            botMessage.className = 'message bot-message';
+            botMessage.textContent = data.response;
+            chatMessages.appendChild(botMessage);
+
+            // Scroll to bottom
+            chatMessages.scrollTo({
+                top: chatMessages.scrollHeight,
+                behavior: 'smooth'
+            });
+        } catch (error) {
+            console.error('Chat error:', error);
+            loadingDiv.remove();
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'message bot-message error';
+            errorDiv.textContent = 'Error connecting to the server. Please try again.';
+            chatMessages.appendChild(errorDiv);
+        }
+    }
+    </script>
+
+    <!-- Update the contact section -->
+    <section class="page-section" id="contact">
+        <div class="container mx-auto p-6">
+            <h1 class="text-3xl font-bold text-center mb-4">FIND SOLAR INSTALLERS</h1>
+            <div class="input-group">
+                <input id="location-input" type="text" class="w-full p-2 border rounded-lg mb-2" placeholder="Enter location (e.g., Lahore)">
+                <input id="radius-input" type="number" class="w-full p-2 border rounded-lg mb-3" placeholder="Enter radius (1-50 km)" min="1" max="50">
+                
+                <div class="button-group" style="display: flex; justify-content: center; gap: 20px; margin: 1rem 0;">
+                    <a href="#" id="find-installers-btn" class="animated-button type--C">
+                        <div class="button__line"></div>
+                        <div class="button__line"></div>
+                        <span class="button__text">FIND INSTALLERS</span>
+                        <div class="button__drow1"></div>
+                        <div class="button__drow2"></div>
+                    </a>
+                
+                    <a href="#" id="toggle-view-btn" class="animated-button type--C">
+                        <div class="button__line"></div>
+                        <div class="button__line"></div>
+                        <span class="button__text">VIEW LIST</span>
+                        <div class="button__drow1"></div>
+                        <div class="button__drow2"></div>
+                    </a>
+                </div>
+            </div>
+            <div id="map" style="height: 400px; margin-top: 1rem;" class="mt-4"></div>
+            <!-- Add this list container -->
+            <!-- Update the list container div -->
+            <div id="installer-list" class="mt-6 bg-white p-6 rounded-lg shadow-md" style="display: none;">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+                    <a href="#" id="download-csv" class="animated-button type--C" style="transform: scale(0.8);">
+                        <div class="button__line"></div>
+                        <div class="button__line"></div>
+                        <span class="button__text">DOWNLOAD LIST</span>
+                        <div class="button__drow1"></div>
+                        <div class="button__drow2"></div>
+                    </a>
+                </div>
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <!-- Add this before the closing body tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    
+    <!-- Footer with copyright -->
+    <footer style="background-color: rgba(0, 0, 0, 0.9); padding: 20px 0; text-align: center; color: #aaa; border-top: 1px solid rgba(255, 165, 0, 0.3);">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <p style="margin-bottom: 10px;">© 2025 Solaiel Energy. All Rights Reserved.</p>
+            <p style="font-size: 0.9em;">This website and its content are protected by copyright law. No part of this website may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of Solaiel Energy.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <!-- Add the db.js script with type="module" -->
+    <script src="firebase/db.js" type="module"></script>
+        <script>
+        function initMap() {
+            if (typeof google === 'undefined') {
+                setTimeout(initMap, 100);
+                return;
+            }
+            window.initMap();
+        }
+    </script>
+    <script type="module" src="googleMaps.js"></script>
+</body>
+</html>
